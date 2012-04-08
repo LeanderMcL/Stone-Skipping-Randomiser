@@ -2,6 +2,12 @@
 use warnings;
 use strict;
 
+# existing perl modules
+use File::Slurp;
+
+# modules existing within the codebase
+use library::config;
+
 sub randomise {
     my @array = @_;
     my $length = @array;
@@ -25,16 +31,13 @@ sub multi_randomise {
     return %returns;
 }
 
-my @stones;
+my $text = config::get_text_file();
 
-open(STONES,"<stones.txt");
-while (<STONES>) {
-    my $line = $_;
-    chomp $line;
-    push (@stones, $line);
-}
+my $file = read_file($text, array_ref => 1);
+
+my @stones = @{$file};
 
 my %to_skip = multi_randomise(3,@stones);
 foreach my $stone (keys %to_skip) {
-    print $stone, "\n";
+   print $stone, "\n";
 }
