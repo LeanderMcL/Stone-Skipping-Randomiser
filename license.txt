@@ -1,0 +1,14 @@
+Stone Skipping Randomiser written by Lucy McLaughlin
+
+This free software is released under an Attribution Non-Commercial Share-Alike License.
+
+You can find a short description of the terms of this license here:
+http://creativecommons.org/licenses/by-nc-sa/3.0/
+
+The full legal text of the license can be found here:
+http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
+
+You can download the latest version of the software at:
+https://github.com/randomling/Stone-Skipping-Randomiser
+
+Please report any bugs at the above URL.
