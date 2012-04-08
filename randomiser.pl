@@ -1,9 +1,10 @@
-#!opt/local/perl
+#!/usr/bin/perl
 use warnings;
 use strict;
 
 # existing perl modules
 use File::Slurp;
+use CGI ':standard';
 
 # modules existing within the codebase
 use library::config;
@@ -31,13 +32,15 @@ sub multi_randomise {
     return %returns;
 }
 
-my $text = config::get_text_file();
-
+my $text = config::get_text_file;
 my $file = read_file($text, array_ref => 1);
-
 my @stones = @{$file};
-
 my %to_skip = multi_randomise(3,@stones);
-foreach my $stone (keys %to_skip) {
-   print $stone, "\n";
+
+print header(-charset=>'utf-8');
+print start_html(-title=>"Random stones!");
+print h1("Here are your random stones.");
+foreach my $stone (keys %to_skip) { 
+    print p($stone);
 }
+print end_html;
