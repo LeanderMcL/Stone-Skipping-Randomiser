@@ -1,0 +1,22 @@
+body {
+    font-family: Georgia, Verdana, Arial;
+    color:#191970;
+    background-color:#F5DEB3
+}
+
+p {
+    font-size:0.95em;
+}
+
+h1 {
+    font-size:2.5em;
+    text-align:center;
+}
+
+h2 {
+    font-size:1.5em;
+}
+
+ul {
+    list-style-type:square;
+}
