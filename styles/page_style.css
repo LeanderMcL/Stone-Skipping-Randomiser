@@ -17,6 +17,23 @@ h2 {
     font-size:1.5em;
 }
 
+a {
+    color:#DAA520;
+}
+
 ul {
     list-style-type:square;
+}
+
+form {
+    padding:30px 100px;
+}
+
+.navigation {
+    text-align:center;
+}
+
+.navigation a {
+    color:#8B0000;
+    padding:20px;
 }

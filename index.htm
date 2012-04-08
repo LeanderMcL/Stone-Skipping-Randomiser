@@ -1,0 +1,22 @@
+<html>
+<head>
+    <title>Welcome to the Stone Skipping Randomiser</title>
+    <link href="styles/page_style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <script type="text/javascript" src="navigation.js"></script>
+    <h1>The Stone Skipping Randomiser</h1>
+    <h2>What is it?</h2>
+    <p>In short: it's a page that provides you with a number of questions to answer. You get to pick the number. The page picks the questions.</p>
+    <h2>Why is it useful?</h2>
+    <p>Well, <a href="http://www.fluentself.com/blog/stuckification/stone-skipping/">Havi</a> explains it a whole lot better than me. But if you're stuck in some way, asking gentle, mindful questions and seeing what comes up is a good way to help yourself get unstuck.</p>
+    <h2>How do I get my stones?</h2>
+    <p>Simply enter a number and hit Enter, or click the Submit button below, and you'll be taken to a page with your random questions or stones.</p>
+    <form action="../cgi-bin/randomiser.pl" method="get">
+        How many stones would you like?<br />
+         <input type="text" name="num" size="5" /><br />
+        <input type="submit" value="Submit"><br />
+    </form>
+</body>
+
+</html>

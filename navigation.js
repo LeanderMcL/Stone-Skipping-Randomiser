@@ -1,0 +1,1 @@
+document.write('<div class="navigation"><a href="index.htm">home</a> <a href="about.htm">about</a> <a href="contact.htm">contact</a></div>');

@@ -31,11 +31,11 @@ sub multi_randomise {
     }
     return %returns;
 }
-
+my $num = param('num');
 my $text = config::get_text_file;
 my $file = read_file($text, array_ref => 1);
 my @stones = @{$file};
-my %to_skip = multi_randomise(3,@stones);
+my %to_skip = multi_randomise($num,@stones);
 
 print header(-charset=>'utf-8');
 print start_html(-title=>"Random stones!");
