@@ -38,7 +38,8 @@ my @stones = @{$file};
 my %to_skip = multi_randomise($num,@stones);
 
 print header(-charset=>'utf-8');
-print start_html(-title=>"Random stones!");
+print start_html(-title=>"Random stones!",-style=>{"src"=>"../library/styles/page_style.css");
+print script({"src"=>"../library/navigation.js", "type"=>"text/javascript"},"");
 print h1("Here are your random stones.");
 foreach my $stone (keys %to_skip) { 
     print p($stone);
